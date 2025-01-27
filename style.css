@@ -959,3 +959,35 @@ h3[style*="font-family"] {
         height: 400px;
     }
 }
+
+.logo-scroll {
+    overflow-x: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-color) var(--background-light);
+}
+
+.logo-scroll::-webkit-scrollbar {
+    height: 8px;
+}
+
+.logo-scroll::-webkit-scrollbar-track {
+    background: var(--background-light);
+    border-radius: 4px;
+}
+
+.logo-scroll::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 4px;
+}
+
+.logo-scroll .scroll-container {
+    display: flex;
+    gap: 15px;
+    padding-bottom: 10px;
+    min-width: min-content;
+}
+
+.logo-scroll img {
+    width: calc(50% - 7.5px);
+    flex-shrink: 0;
+}
